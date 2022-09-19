@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(30, 25, 31);
+    background-image: url("https://static.wixstatic.com/media/efe4c3_72a3768390434def9b3af31af11a37b7~mv2.png/v1/fill/w_444,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Site%20surfista.png") ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 140px;
+}
+a{
+    text-decoration: None;
+}
+.title{
+    margin: 0%;
+    text-align: center;
+    font-family: Epilogue, sans-serif;
+    font-size: 4em;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+li > a{
+    font-family: 'monospace', 'Courier New', Courier, monospace;
+    text-decoration: None;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li{
+    display: inline;
+    font-size: 2em;
+}
+.navbar{
+    margin-top: -15px;
+    position: relative;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.bg{
+    height: 500px;
+    text-align: center;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+.profile{
+    border-radius: 80%;
+}
+.name{
+    font-family: Epilogue, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: 20px;
+}
+.bots{
+    margin-top: 5em;
+    margin-bottom: 30em;
+}
+.bot{
+    margin-bottom: 30px;
+    padding-right: 10px;
+    border-radius: 15px;
+    padding-top: 3em;
+    background-color: black;
+    border: solid 2px;
+    display: inline;
+    min-width: 3 20px;
+}
+.bot:active{
+    background-color: rgb(70, 70, 70);
+}
+.imgfundo{
+    height: 500px;
+    width: 500px;
+
+}
