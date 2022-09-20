@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+
+<!--Definindo variáveis para as cors-->
+{% set red = randint(120,255)%} 
+{% set green = randint(120,255)%}
+{% set blue = randint(120,255)%}
+
+
+{% block head %}
+    <!-- carregando arquivo css dentro pasta 'static/CSS' -->
+    <link rel="stylesheet" href={{ url_for('static', filename='CSS/style.css') }}>
+    <style>
+        .title{
+
+            /* Definindo o RGB nas cores */
+            color: rgb({{red}}, {{green}}, {{blue}});
+
+            /* Definindo o background gradient */
+            background-image: linear-gradient(to top, rgb({{red}}, {{green}}, {{blue}}) 30%, rgb({{blue}}, {{red}}, {{green}}));
+
+            /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+            background-clip: text;
+
+            /* Alguns navegadores precisam do prefixo */
+            -webkit-background-clip: text; 
+
+            /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+            -webkit-text-fill-color: transparent;    
+        }
+        .navbar{
+            background-color: rgb({{red}}, {{green}}, {{blue}});
+        }
+        a:active, li:active, .active{
+            background-color: rgb({{red-30}}, {{green-30}}, {{blue-30}});
+        }
+    </style>
+{% endblock %}
+
+
+{% block body %}
+
+
+    <header>
+        <h1 class="title">GAMADEV</h1>
+        <div class="navbar">
+            <ul>
+                <li class="active"><a class="active" href="/">Home</a></li>
+                <li><a href="/bots">Bots</a></li>
+                <li><a href="#Devs">Devs</a></li>
+                <li><a href="#Support">Support</a></li>
+            </ul>
+        </div>
+    </header>
+{% endblock %}
